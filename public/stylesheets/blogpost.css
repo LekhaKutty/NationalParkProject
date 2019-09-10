@@ -1,0 +1,67 @@
+body{
+    background-color:rgba(255, 255, 255, 0.8);
+  }
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:rgb(164, 199, 70);
+}
+li{
+    float: left;
+    
+}
+li:last-child {
+    border-right: none;
+}
+li a{
+    color: black;
+    padding: 20px 50px;
+    text-align: center;
+    text-decoration: none;
+}
+li a:hover:not(.active) {
+    background-color:rgb(172, 207, 66);
+}  
+.active {
+background-color:rgb(114, 150, 16);
+color:white;
+}
+input[type=text],textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  textarea{
+    height:300px;
+  }
+  input[type=submit] {
+    width: 100%;
+    padding: 14px 20px;
+    margin: 8px 0;
+    background-color: rgb(164, 199, 70);
+    color: black;
+    font-size: 25px;
+    
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: rgb(97, 117, 39);
+  }
+  textarea{
+
+  }
+  .div {
+    border-radius: 500px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+
+}

@@ -1,0 +1,41 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="stylesheets/sampleblog.css">
+    <title>Blogs</title>
+</head>
+<body>
+    <div id = "horizontal">
+        <ul>
+            <li class="hr"><h3><a href="/">Home</a></h3></li>
+            <li class="hr"><h3><a href="/attractions">Gallery</a></h3></li>
+            <li class="hr"><h3><a href="#" class="active">Blogs</a></h3></li>
+            <li class="hr"><h3><a href="/postblog">Add Blog</a></h3></li>
+        </ul>
+    </div>
+    <ul id="vertical">
+        <% for(let i=0; i < data.lists.length; i++) {%>
+            <li class="list" attr ="<%= data.lists[i].filename %>"><a><%= data.lists[i].heading%></a></li>
+        <% } %>
+    </ul>
+    <div class="container">
+            <div ><h3 id="heading"></h3></div>
+            <div ><p id="para_blog1"></p></div>
+            <br>
+            <br>
+            <div class="input_blog">
+                <form action="#" method="POST" id="form_id">
+                    <textarea type="text" id="comment" name= "comment" placeholder="Enter your comment..."></textarea>
+                    <input type="text" id="name" name="name" placeholder="Enter Name...">
+                    <input type="submit" value="Publish">
+                    <input type="hidden" name="file" id="file">
+                </form>
+            </div>
+            <div class="show_comments" id="comm_div">
+                    
+            </div>
+        </div>
+    <script type = "text/javascript" src = "scripts/bloglist.js" ></script>
+</body>
+</html>
+

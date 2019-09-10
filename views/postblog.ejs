@@ -1,0 +1,35 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="stylesheets/blogpost.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "horizontal">
+        <div class="main">
+            <ul>
+                <li><h3><a href="/">Home</a></h3></li>
+                <li><h3><a href="/attractions">Gallery</a></h3></li>
+                <li><h3><a href="/blog">Blogs</a></h3></li>
+                <li><h3><a href="#" class="active">Add Blog</a></h3></li>
+            </ul>
+        </div>
+    </div>
+    <div class = "div">
+        <form action="#" method="POST">
+            <label for="name"><h3>First Name</h3></label>
+            <input type="text" id="name" name="name" placeholder="Your name..">
+        
+            <label for="heading"><h3>Heading</h3></label>
+            <input type="text" id="heading" name="heading" placeholder="Heading...">
+            
+            <label for="blog-para"><h3>Content</h3></label>
+            <textarea type="text" id="blog-para" name="blog_para" ></textarea>
+            <input type="hidden" name="file_id" id = "file_id" value= "" >
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <script type = "text/javascript" src = "scripts/blog_post.js" ></script>
+</body>
+</html>
